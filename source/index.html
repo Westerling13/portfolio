@@ -8,6 +8,7 @@
       <link rel="preload" href="/fonts/OpenSans-Regular.woff2" as="font">
     </head>
     <body class="page">
+
       <svg style="display:none">
         <symbol viewBox="0 0 512 512" id="icon-vk">
           <path d="M507.4 370.47c-1.377-2.303-9.89-20.8-50.85-58.815-42.88-39.808-37.12-33.344 14.53-102.176 31.455-41.92 44.03-67.52 40.095-78.465-3.744-10.432-26.88-7.68-26.88-7.68l-76.928.448s-5.696-.768-9.952 1.76c-4.128 2.496-6.784 8.256-6.784 8.256s-12.19 32.447-28.447 60.03c-34.272 58.21-48 61.28-53.6 57.665-13.024-8.416-9.76-33.856-9.76-51.904 0-56.415 8.544-79.935-16.672-86.015-8.383-2.016-14.527-3.36-35.935-3.584-27.456-.287-50.72.097-63.872 6.53-8.768 4.287-15.52 13.855-11.392 14.4 5.09.67 16.61 3.103 22.72 11.423 7.905 10.72 7.617 34.848 7.617 34.848s4.544 66.4-10.592 74.657c-10.4 5.664-24.64-5.888-55.2-58.72-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.927-3.616-11.84-4.768-11.84-4.768l-73.15.448s-10.977.32-15.01 5.088c-3.583 4.257-.287 13.025-.287 13.025S58.663 275.4 123.495 342.95c59.488 61.92 127.008 57.857 127.008 57.857h30.592s9.248-1.024 13.952-6.112c4.352-4.672 4.192-13.44 4.192-13.44s-.61-41.056 18.463-47.104c18.784-5.95 42.912 39.68 68.48 57.25 19.328 13.28 34.016 10.367 34.016 10.367l68.383-.96S524.36 398.6 507.4 370.47z"/>
@@ -70,93 +71,93 @@
               </ul>
           </div>
         </aside>
+        <main class="page-main">
 
-      <main class="page-main">
+          <section class="information">
+            <h2 class="information__title">Обо мне</h2>
+            <div class="information__text">
+              <p>
+                Мне 23 года и я начинающий верстальщик.
+              </p>
+              <p>
+                Я умею делать адаптивную, ретиновую, семантичную верстку.
+                В работе использую Gulp, Sass, методологию БЭМ, SVG-спрайты. Оптимизирую шрифты и изображения.
+              </p>
+              <p>
+                Успешно прошел обучение на верстальщика в HTML Academy. Ссылки на сертификаты:
+              </p>
+              <ul>
+                <li>
+                  <a href="https://assets.htmlacademy.ru/certificates/intensive/45/181069.pdf">Базовый HTML и CSS</a>
+                </li>
+                <li>
+                  <a href="https://assets.htmlacademy.ru/certificates/intensive/71/181069.pdf">Профессиональный HTML & CSS, уровень 2</a>
+                </li>
+              </ul>
+              <p>
+                В данный момент я активно изучаю JavaScript и в будущем собираюсь стать профессиональным фронтенд-разработчиком.
+              </p>
+            </div>
+          </section>
+          <section class="portfolio">
+            <h2 class="portfolio__title">Мои работы</h2>
+            <ul class="portfolio__list">
 
-        <section class="information">
-          <h2 class="information__title">Обо мне</h2>
-          <div class="information__text">
-            <p>
-              Мне 23 года и я начинающий верстальщик.
-            </p>
-            <p>
-              Я умею делать адаптивную, ретиновую, семантичную верстку.
-              В работе использую Gulp, Sass, методологию БЭМ, SVG-спрайты. Оптимизирую шрифты и изображения.
-            </p>
-            <p>
-              Успешно прошел обучение на верстальщика в HTML Academy. Ссылки на сертификаты:
-            </p>
-            <ul>
-              <li>
-                <a href="https://assets.htmlacademy.ru/certificates/intensive/45/181069.pdf">Базовый HTML и CSS</a>
+              <li class="portfolio__item work">
+                <div class="work__image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/sedona-desktop.jpg 1x">
+                    <img src="img/sedona-mobile.jpg" width="320" height="174" alt="Превью Седоны">
+                  </picture>
+                </div>
+                <div class="work__text">
+                  <h3 class="work__title">Седона</h3>
+                  <p class="work__description">
+                    Туристический городок в Аризоне.<br>
+                    Адаптивная верстка <a class="work__link" href="projects/sedona/index.html">главной страницы</a>, <a class="work__link" href="projects/sedona/gallery.html">страницы галереи</a> и <a class="work__link" href="projects/sedona/form.html">страницы отзыва</a>.
+                  </p>
+                </div>
+                <a class="work__button" href="projects/sedona/index.html">Посмотреть</a>
               </li>
-              <li>
-                <a href="https://assets.htmlacademy.ru/certificates/intensive/71/181069.pdf">Профессиональный HTML & CSS, уровень 2</a>
+
+              <li class="portfolio__item work">
+                <div class="work__image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/bicycle-desktop.jpg 1x">
+                    <img src="img/bicycle-mobile.jpg" width="320" height="174" alt="Превью Седоны">
+                  </picture>
+                </div>
+                <div class="work__text">
+                  <h3 class="work__title">Bicycle</h3>
+                  <p class="work__description">
+                    Главная страница магазина винтажных велосипедов.
+                  </p>
+                </div>
+                <a class="work__button" href="projects/bicycle/index.html">Посмотреть</a>
               </li>
+
+              <li class="portfolio__item work">
+                <div class="work__image">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/gllacy-desktop.jpg 1x">
+                    <img src="img/gllacy-mobile.jpg" width="320" height="174" alt="Превью Gllacy">
+                  </picture>
+                </div>
+                <div class="work__text">
+                  <h3 class="work__title">Gllacy</h3>
+                  <p class="work__description">
+                    Интернет-магазин мороженого.<br><a class="work__link" href="projects/gllacy/index.html">Главная страница</a> и <a class="work__link" href="projects/gllacy/catalog.html">страница каталога</a>.
+                  </p>
+                </div>
+                <a class="work__button" href="projects/gllacy/index.html">Посмотреть</a>
+              </li>
+
             </ul>
-            <p>
-              В данный момент я активно изучаю JavaScript и в будущем собираюсь стать профессиональным фронтенд-разработчиком.
-            </p>
-          </div>
-        </section>
-        <section class="portfolio">
-          <h2 class="portfolio__title">Мои работы</h2>
-          <ul class="portfolio__list">
+          </section>
 
-            <li class="portfolio__item work">
-              <div class="work__image">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/sedona-desktop.jpg 1x">
-                  <img src="img/sedona-mobile.jpg" width="320" height="174" alt="Превью Седоны">
-                </picture>
-              </div>
-              <div class="work__text">
-                <h3 class="work__title">Седона</h3>
-                <p class="work__description">
-                  Туристический городок в Аризоне.<br>
-                  Адаптивная верстка <a class="work__link" href="sedona/index.html">главной страницы</a>, <a class="work__link" href="sedona/gallery.html">страницы галереи</a> и <a class="work__link" href="sedona/form.html">страницы отзыва</a>.
-                </p>
-              </div>
-              <a class="work__button" href="sedona/index.html">Посмотреть</a>
-            </li>
+        </main>
+      </div>
 
-            <li class="portfolio__item work">
-              <div class="work__image">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/bicycle-desktop.jpg 1x">
-                  <img src="img/bicycle-mobile.jpg" width="320" height="174" alt="Превью Седоны">
-                </picture>
-              </div>
-              <div class="work__text">
-                <h3 class="work__title">Bicycle</h3>
-                <p class="work__description">
-                  <a class="work__link" href="bicycle/index.html">Главная страница</a> магазина винтажных велосипедов.
-                </p>
-              </div>
-              <a class="work__button" href="bicycle/index.html">Посмотреть</a>
-            </li>
-
-            <li class="portfolio__item work">
-              <div class="work__image">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/gllacy-desktop.jpg 1x">
-                  <img src="img/gllacy-mobile.jpg" width="320" height="174" alt="Превью Gllacy">
-                </picture>
-              </div>
-              <div class="work__text">
-                <h3 class="work__title">Gllacy</h3>
-                <p class="work__description">
-                  Интернет-магазин мороженого.<br><a class="work__link" href="gllacy/index.html">Главная страница</a> и <a class="work__link" href="gllacy/catalog.html">страница каталога</a>.
-                </p>
-              </div>
-              <a class="work__button" href="gllacy/index.html">Посмотреть</a>
-            </li>
-
-          </ul>
-        </section>
-
-      </main>
-    </div>
-
+      <script src="js/picturefill.min.js"></script>
     </body>
   </html>

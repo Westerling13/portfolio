@@ -23,10 +23,10 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -53,7 +53,7 @@ gulp.task("minify", function() {
 
 gulp.task("serve", function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -62,13 +62,14 @@ gulp.task("serve", function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/js/*");
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", ["minify"]).on("change", server.reload);
 });
 
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/js/*.js",
+    "source/projects/**/*",
     "source/img/*"
   ], {
     base: "source"
