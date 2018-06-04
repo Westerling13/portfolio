@@ -1,0 +1,102 @@
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  padding: 0 0 10px;
+
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: $font-weight-regular;
+
+  border-radius: 30px;
+
+  transition: all 300ms ease-in;
+
+  &:hover,
+  &:hover .work__image {
+    box-shadow: 2px 2px 16px 0 rgba(32,32,32,.4);
+  }
+
+  &:hover .work__image {
+    background-color: rgba($main-color, 0.8);
+  }
+}
+
+.work__image {
+  padding: 5px;
+
+  border-radius: 25px;
+  background-color: rgba($main-color, 0.5);
+
+  overflow: hidden;
+
+  transition: all 300ms ease-in;
+
+  & img {
+    width: 100%;
+
+    border-radius: 20px;
+  }
+}
+
+.work__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 130px;
+  padding: 10px 0 15px;
+}
+
+.work__title {
+  margin: 0 0 5px;
+
+  font-weight: $font-weight-bold;
+  font-size: 20px;
+  text-align: center;
+  color: $main-color;
+}
+
+.work__description {
+  margin: 0;
+  width: 100%;
+
+  text-align: center;
+}
+
+.work__link {
+  color: $main-color;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.work__button {
+  display: block;
+  width: 200px;
+  padding: 6px 0 8px;
+
+  font-size: 20px;
+  text-align: center;
+  color: $extra-text-color;
+
+  background-color: $main-color;
+
+  transition: all 200ms ease-out;
+
+  &:hover,
+  &:focus {
+    box-shadow: 2px 2px 16px 0 rgba(32,32,32,.6);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .work {
+    width: 370px;
+    padding: 0 0 20px;
+  }
+}

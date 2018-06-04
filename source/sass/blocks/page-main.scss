@@ -1,0 +1,10 @@
+.page-main {
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 840px;
+    padding: 0 30px;
+  }
+}

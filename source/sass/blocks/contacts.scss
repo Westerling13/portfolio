@@ -1,0 +1,38 @@
+.contacts {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.contacts__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+
+  &:hover .contacts__icon,
+  &:focus .contacts__icon {
+    opacity: 0.6;
+  }
+}
+
+.contacts__icon {
+  display: block;
+
+  fill: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    flex-direction: row;
+  }
+}

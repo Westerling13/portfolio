@@ -1,0 +1,47 @@
+.information {
+  padding: 15px 0 0;
+
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: $font-weight-regular;
+}
+
+.information__title {
+  display: block;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 5px 0 6px;
+
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  color: $main-color;
+
+  border: 2px solid $main-color;
+  background-color: #ffffff;
+}
+
+.information__text {
+  padding: 0 5px;
+
+  text-align: justify;
+  text-indent: 15px;
+
+  & p {
+    margin: 0 0 5px;
+  }
+
+  & ul {
+    margin: 0;
+  }
+
+  & a {
+    color: $main-color;
+  }
+
+  & a:hover,
+  & a:focus {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,17 @@
+.page__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page__wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__wrapper {
+    display: flex;
+    width: $desktop-width;
+  }
+}
